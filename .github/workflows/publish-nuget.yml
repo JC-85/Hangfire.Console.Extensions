@@ -37,4 +37,4 @@ jobs:
 
     # Push the NuGet package and symbols to the feed
     - name: Publish to NuGet feed
-      run: dotnet nuget push "./artifacts/*.nupkg" -k ${{ secrets.NUGET_API_KEY }} -s https://nuget.pkg.github.com/JC-85/index.json --skip-duplicate
+      run: dotnet nuget push "./artifacts/*.*nupkg" -k ${{ secrets.NUGET_API_KEY }} -s https://nuget.pkg.github.com/JC-85/index.json --skip-duplicate
