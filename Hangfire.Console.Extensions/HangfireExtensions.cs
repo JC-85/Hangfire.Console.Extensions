@@ -22,5 +22,11 @@ namespace Hangfire.Console.Extensions
 
             return services;
         }
+
+        public static void LogInformation(this ILogger logger, string message, ConsoleTextColor color)
+        {
+            logger.LogInformation(message);
+        }
+
     }
 }
